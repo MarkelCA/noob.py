@@ -38,7 +38,7 @@ Your code has been rated at 9.80/10 (previous run: 9.80/10, +0.00)
 ```
 
 The changes made to the file to acomplish this score were the following:
-```
+```diff
 --- original.py	2022-12-22 21:33:35.280647235 +0100
 +++ perfect.py	2022-12-22 21:33:04.800154461 +0100
 @@ -1,3 +1,4 @@
