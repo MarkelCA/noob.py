@@ -2,9 +2,10 @@
 
 ## In progress
 - [ ] descriptors
+- [ ] properties
 
 ## Backlog
-- [ ] properties
+- [X] decorators
 - [ ] dataclass
 - [ ] function documentation (docstring)
 - [ ] linter (pylint)
