@@ -1,11 +1,12 @@
 # To do
 
 ## In progress
-- [ ] properties
+- [ ] linter (pylint)
+- [ ] dataclass
 
 ## Backlog
-- [ ] dataclass
+- [ ] packages (relative imports, __init__.py etc.)
+- [ ] properties
 - [ ] function documentation (docstring)
-- [ ] linter (pylint)
 - [X] decorators
 - [X] descriptors
