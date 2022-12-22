@@ -6,7 +6,7 @@ from .globals import current_app
 from .globals import request
 
 
-http_method_funcs = frozenset(
+HTTP_METHOD_FUNCS = frozenset(
     ["get", "post", "head", "options", "delete", "put", "trace", "patch"]
 )
 
@@ -100,7 +100,7 @@ class View:
             self = cls(*class_args, **class_kwargs)
 
             def view(**kwargs: t.Any) -> ft.ResponseReturnValue:
-                return current_app.ensure_sync(self.dispatch_request)(**kwars)
+                return current_app.ensure_sync(self.dispatch_request)(**kwargs)
 
         if cls.decorators:
             view.__name__ = name
@@ -152,7 +152,7 @@ class MethodView(View):
                 if getattr(base, "methods", None):
                     methods.update(base.methods)  # type: ignore[attr-defined]
 
-            for key in http_method_funcs:
+            for key in HTTP_METHOD_FUNCS:
                 if hasattr(cls, key):
                     methods.add(key.upper())
 

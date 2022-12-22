@@ -99,7 +99,7 @@ class View:
             self = cls(*class_args, **class_kwargs)
 
             def view(**kwargs: t.Any) -> ft.ResponseReturnValue:
-                return current_app.ensure_sync(self.dispatch_request)(**kwars)
+                return current_app.ensure_sync(self.dispatch_request)(**kwargs)
 
         if cls.decorators:
             view.__name__ = name
