@@ -1,12 +1,15 @@
 # To do
 
 ## In progress
-- [ ] linter (pylint)
 - [ ] dataclass
+- [ ] properties
 
 ## Backlog
 - [ ] packages (relative imports, __init__.py etc.)
-- [ ] properties
 - [ ] function documentation (docstring)
+- [ ] VirtualEnv
+- [ ] Package managers (Poetry, Conda...)
+- [X] linter (pylint)
 - [X] decorators
+- [X] JIT compilation
 - [X] descriptors
