@@ -2,6 +2,8 @@
 
 These are a set of tests with just in time compilation to measure the python performance on repetitive calculations
 
+Credits to: [Just In Time (JIT) Compilers - Computerphile](https://www.youtube.com/watch?v=d7KHAVaX_Rs)
+
 ## Code
 ```python
 def f(x, y):
