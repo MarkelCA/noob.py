@@ -26,7 +26,7 @@ Executed in    1,17 secs   fish           external
 ```
 ### PyPy (jit interpreter on)
 ```
-time pypy  waste.py
+time pypy waste.py
 ```
 Output:
 ```

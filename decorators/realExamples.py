@@ -16,7 +16,7 @@ def timer(func):
         value = func(*args, **kwargs)
         end_time = time.perf_counter()      
         run_time = end_time - start_time    
-        print(f"Finished {func.__name__!r} in {run_time:.4f} secs")
+        print(f"Function {func.__name__!r} took {run_time:.4f} secs")
         return value
     return wrapper_timer
 
@@ -29,8 +29,8 @@ def waste_some_time(num_times):
 def timed_sleep():
     time.sleep(2)
 
-# waste_some_time(1000)
-# timed_sleep()
+waste_some_time(1000)
+timed_sleep()
 
 ###################
 ## DEBUG

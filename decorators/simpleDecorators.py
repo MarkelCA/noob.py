@@ -9,8 +9,8 @@ def my_decorator(func):
 def say_whee():
     print("Whee!")
 
-say_whee = my_decorator(say_whee)
-say_whee()
+decorated_say_whee = my_decorator(say_whee)
+decorated_say_whee()
 print()
 print('----------------With sintactic sugar----------------')
 
@@ -22,8 +22,8 @@ def my_decorator2(func):
     return wrapper
 
 @my_decorator2
-def say_whee2():
+def decorated_say_whee2():
     print("Whee!")
 
-say_whee2()
+decorated_say_whee2()
 

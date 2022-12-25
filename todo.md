@@ -5,7 +5,10 @@
 - [ ] properties
 
 ## Backlog
-- [ ] packages (relative imports, __init__.py etc.)
+- [ ] packages (relative imports, `__init__.py` etc.)
+- [ ] Cython
+- [ ] `__pycache__`, bytecode
+- [ ] Jython
 - [ ] function documentation (docstring)
 - [ ] VirtualEnv
 - [ ] Package managers (Poetry, Conda...)
