@@ -1,3 +1,5 @@
+# User defined
+multithread_print/f.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
