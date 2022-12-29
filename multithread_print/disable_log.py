@@ -1,14 +1,15 @@
 import logging
 
+logger = logging.getLogger()
+logger.setLevel(level=logging.DEBUG)
 logging.debug('oeunthoo')
-# logger = logging.getLogger()
-# logger.setLevel(level=logging.DEBUG)
 
 
 def par(func):
     def wrapper(*args, **kwargs):
-        logger.debug('oeunth')
+        logger.disabled = True
         func(*args, **kwargs)
+        logger.disabled = False
 
     return wrapper
 
@@ -24,16 +25,14 @@ def fac(n: int, out: bool = False) -> int:
 
         # if out:
             # print(fact)
-
+        # logger.debug('nth')
         count += 1
-        # print(str(count / n * 100) + '%')
+        logger.debug(f'{count / n * 100:0.2f} %')
 
     return fact
 
 
 
-# logger.debug('oeuntth')
 
-
-# fac(3000, True)
-    
+fac(200000, True)
+logger.debug('finished')
