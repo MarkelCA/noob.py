@@ -9,6 +9,7 @@
 - [ ] Cython
 - [ ] `__pycache__`, bytecode
 - [ ] Jython, CPython, IronPython
+- [ ] PyDoc
 - [ ] function documentation (docstring)
 - [ ] VirtualEnv
 - [ ] Package managers (Poetry, Conda...)

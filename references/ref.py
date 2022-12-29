@@ -28,3 +28,11 @@ h = [1]
 print( id(g) == id(h) )
 
 
+i = [4,3,2]
+j = i[:] # Slicing without limits just copies the list
+
+print(i)
+j[0] = 642642
+print(i)
+print(j)
+
